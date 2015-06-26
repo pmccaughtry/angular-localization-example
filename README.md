@@ -9,10 +9,10 @@ Other i18n use cases can be addressed through built-in AngularJS filters such as
 
 ## Set up
 
-- npm install && bower install
+- `npm install && bower install`
 
 ## Unit tests
 
-- grunt karma
+- `grunt karma`
 
 ![Output from grunt karma](test/unit-tests.png?raw=true "Unit Tests")
