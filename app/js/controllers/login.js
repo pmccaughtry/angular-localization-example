@@ -5,4 +5,8 @@ angular.module('localization')
   this.login = function () {
     $location.path('/welcome');
   };
+
+  this.logout = function () {
+    $location.path('/');
+  };
 }]);

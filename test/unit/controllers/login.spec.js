@@ -14,4 +14,8 @@ describe('Login Controller', function () {
   it('Should provide a login function', function () {
     expect(scope.lCtrl.login).toBeDefined();
   });
+
+  it('Should provide a logout function', function () {
+    expect(scope.lCtrl.logout).toBeDefined();
+  });
 });
