@@ -14,3 +14,5 @@ Other i18n use cases can be addressed through built-in AngularJS filters such as
 ## Unit tests
 
 - grunt karma
+
+![Output from grunt karma](test/unit-tests.png?raw=true "Unit Tests")
