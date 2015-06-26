@@ -17,7 +17,7 @@
   ],
   "author": "Paul McCaughtry",
   "license": "ISC",
-  "homepage": "https://bitbucket.org/paulmccaughtry/angular-testing#readme",
+  "homepage": "https://github.com/pmccaughtry/angular-localization-example#readme",
   "devDependencies": {
     "grunt": "^0.4.5",
     "grunt-contrib-clean": "^0.6.0",
