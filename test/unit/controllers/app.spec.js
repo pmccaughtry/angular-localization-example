@@ -5,7 +5,7 @@ describe('App Controller', function () {
 
   beforeEach(function () {
     module('localization');
-    inject(function ($rootScope, $controller, Localize) {
+    inject(function ($rootScope, $controller) {
       scope = $rootScope.$new();
       controller = $controller('appController as appCtrl', { $scope: scope });
     });
