@@ -14,4 +14,8 @@ describe('App Controller', function () {
   it('Should provide the current year in the footer', function () {
     expect(scope.appCtrl.year).toEqual(new Date().getFullYear());
   });
+
+  it('Should assign localization strings to $rootScope.labels', function () {
+    expect(scope.labels).toBeDefined();
+  });
 });
