@@ -1,0 +1,11 @@
+{
+  "name": "angular-localization-example",
+  "version": "0.0.1",
+  "dependencies": {
+    "angular": "latest",
+    "angular-mocks": "latest",
+    "angular-resource": "latest",
+    "angular-route": "latest",
+    "bootstrap": "latest"
+  }
+}
