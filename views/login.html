@@ -1,0 +1,17 @@
+<div class="container-fluid">
+  <form ng-submit="lCtrl.login()" role="form">
+    <div class="form-group">
+      <label for="username" ng-bind="labels.username"></label><br/>
+      <input id="username" type="text" ng-model="lCtrl.user.username" class="form-control" placeholder="{{labels.unplaceholder}}">
+    </div>
+
+    <div class="form-group">
+      <label for="password" ng-bind="labels.password"></label><br/>
+      <input id="password" type="password" ng-model="lCtrl.user.password" class="form-control" placeholder="{{labels.passplaceholder}}">
+    </div>
+
+    <div class="form-group">
+      <button type="submit" class="btn btn-primary btn-lg btn-block">{{labels.loginbutton}}</button>
+    </div>
+  </form>
+</div>

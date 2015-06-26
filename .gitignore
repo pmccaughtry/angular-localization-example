@@ -1,0 +1,9 @@
+.idea
+.DS_Store
+coverage
+junit-results
+lib
+node_modules
+npm-debug.log
+reports
+selenium
