@@ -1,0 +1,11 @@
+{
+  "exclude-list": ["app/css/*.min.css", "libs/*"],
+  "important": 2,
+  "duplicate-properties": 2,
+  "vendor-prefix": false,
+  "errors": 2,
+  "unqualified-attributes": false,
+  "box-model": false,
+  "import": 2,
+  "adjoining-classes": false
+}

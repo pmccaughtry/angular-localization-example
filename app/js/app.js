@@ -2,11 +2,6 @@
 
 angular.module('localization', ['ngRoute', 'ngResource'])
 
-.controller('appController', ['$rootScope', 'Localize', function ($rootScope, l10n) {
-  this.year = new Date().getFullYear();
-  $rootScope.labels = l10n.get();
-}])
-
 .config(['$routeProvider', function ($routeProvider) {
   $routeProvider
     .when('/login', {

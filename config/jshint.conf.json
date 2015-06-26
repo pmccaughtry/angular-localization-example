@@ -1,0 +1,32 @@
+{
+  "curly": true,
+  "eqnull": true,
+  "eqeqeq": true,
+  "undef": true,
+  "unused": true,
+  "globals": {
+  "window": true,
+    "document": true,
+    "navigator": true,
+    "jQuery": true,
+    "node": true,
+    "devel": true,
+    "console": true,
+    "browser": true,
+    "angular": true,
+    "inject": true,
+    "$rootScope": true,
+    "module": true,
+    "beforeEach": true,
+    "afterEach": true,
+    "describe": true,
+    "ddescribe": true,
+    "xdescribe": true,
+    "it": true,
+    "iit": true,
+    "xit": true,
+    "expect": true,
+    "spyOn": true,
+    "protractor": true
+  }
+}
