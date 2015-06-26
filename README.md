@@ -9,6 +9,7 @@ Other i18n use cases can be addressed through built-in AngularJS filters such as
 
 ## Set up
 
+- Dependencies on grunt-cli, bower (`npm install -g grunt-cli bower`)
 - `npm install && bower install`
 
 ## Unit tests
