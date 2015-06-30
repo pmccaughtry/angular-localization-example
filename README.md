@@ -7,6 +7,10 @@ Other i18n use cases can be addressed through built-in AngularJS filters such as
 
 **Note:** Only the `gulp karma` target is set up to run. The index.html file references dependencies instead of the concat/minified bundles.
 
+![English Login Screen](screenshots/login-english.png?raw=true "English Login Screen")
+
+![Spanish Login Screen](screenshots/login-spanish.png?raw=true "Spanish Login Screen")
+
 ## Set up
 
 - Dependencies on gulp, bower (`npm install -g gulp bower`)
@@ -16,4 +20,4 @@ Other i18n use cases can be addressed through built-in AngularJS filters such as
 
 - `gulp karma`
 
-![Output from gulp karma](test/unit-tests.png?raw=true "Unit Tests")
+![Output from gulp karma](screenshots/unit-tests.png?raw=true "Unit Tests")
