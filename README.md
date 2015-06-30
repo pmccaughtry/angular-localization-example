@@ -5,15 +5,15 @@ The example uses a service to set the json to a $rootScope.labels so the json pr
 
 Other i18n use cases can be addressed through built-in AngularJS filters such as currency and date.
 
-**Note:** Only the `grunt karma` target is set up to run. The index.html file references dependencies instead of the concat/minified bundles.
+**Note:** Only the `gulp karma` target is set up to run. The index.html file references dependencies instead of the concat/minified bundles.
 
 ## Set up
 
-- Dependencies on grunt-cli, bower (`npm install -g grunt-cli bower`)
+- Dependencies on gulp, bower (`npm install -g gulp bower`)
 - `npm install && bower install`
 
 ## Unit tests
 
-- `grunt karma`
+- `gulp karma`
 
-![Output from grunt karma](test/unit-tests.png?raw=true "Unit Tests")
+![Output from gulp karma](test/unit-tests.png?raw=true "Unit Tests")
