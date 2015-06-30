@@ -6,7 +6,8 @@ angular.module('localization', ['ngRoute', 'ngResource'])
   $routeProvider
     .when('/login', {
       templateUrl: 'views/login.html',
-      controller: 'LoginController as lCtrl'
+      controller: 'LoginController',
+	  controllerAs: 'lCtrl'
     })
     .when('/welcome', {
       templateUrl: 'views/welcome.html'

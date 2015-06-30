@@ -28,7 +28,8 @@ describe('Application Routes', function () {
     it('should use LoginController controller', function () {
       location.path('/taco-salads');
       rootScope.$digest();
-      expect(route.current.controller).toBe('LoginController as lCtrl');
+      expect(route.current.controller).toBe('LoginController');
+      expect(route.current.controllerAs).toBe('lCtrl');
     });
   });
 
@@ -64,7 +65,8 @@ describe('Application Routes', function () {
     it('should use LoginController controller', function () {
       location.path('/taco-salads');
       rootScope.$digest();
-      expect(route.current.controller).toBe('LoginController as lCtrl');
+      expect(route.current.controller).toBe('LoginController');
+      expect(route.current.controllerAs).toBe('lCtrl');
     });
   });
 });
