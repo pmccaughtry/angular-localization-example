@@ -20,4 +20,8 @@ Other i18n use cases can be addressed through built-in AngularJS filters such as
 
 - `gulp karma`
 
+## E2E tests
+- `gulp protractor`
+This will run `webdriver-manager update`. Be sure to update **config/protractor.conf.js** with the path to the selenium jar ('../node_modules/protractor/selenium/selenium...jar').
+
 ![Output from gulp karma](screenshots/unit-tests.png?raw=true "Unit Tests")
