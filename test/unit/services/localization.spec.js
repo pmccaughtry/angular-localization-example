@@ -3,27 +3,31 @@
 describe('Localization service', function () {
     var scope, $httpBackend, lang, file;
 
+    var getFile = function (lang) {
+        switch (true) {
+            case /es/.test(lang):
+                file = 'localization/labels.es-MX.json';
+                break;
+            case /de/.test(lang):
+                file = 'localization/labels.de-DE.json';
+                break;
+            case /fr/.test(lang):
+                file = 'localization/labels.fr-FR.json';
+                break;
+            default:
+                file = 'localization/labels.en-US.json';
+                break;
+        }
+
+        return file;
+    };
+
     beforeEach(module('localization'));
 
     describe('English string localization', function () {
         beforeEach(function () {
             inject(function ($rootScope, _$httpBackend_, Localize) {
-                lang = 'en-US';
-
-                switch (true) {
-                    case /es/.test(lang):
-                        file = 'localization/labels.es-MX.json';
-                        break;
-                    case /de/.test(lang):
-                        file = 'localization/labels.de-DE.json';
-                        break;
-                    case /fr/.test(lang):
-                        file = 'localization/labels.fr-FR.json';
-                        break;
-                    default:
-                        file = 'localization/labels.en-US.json';
-                        break;
-                }
+                var lang = getFile('en-US');
 
                 $httpBackend = _$httpBackend_;
                 $httpBackend.expectGET(file).respond({
@@ -51,22 +55,7 @@ describe('Localization service', function () {
     describe('Spanish string localization', function () {
         beforeEach(function () {
             inject(function ($rootScope, _$httpBackend_, Localize) {
-                lang = 'es-MX';
-
-                switch (true) {
-                    case /es/.test(lang):
-                        file = 'localization/labels.es-MX.json';
-                        break;
-                    case /de/.test(lang):
-                        file = 'localization/labels.de-DE.json';
-                        break;
-                    case /fr/.test(lang):
-                        file = 'localization/labels.fr-FR.json';
-                        break;
-                    default:
-                        file = 'localization/labels.en-US.json';
-                        break;
-                }
+                var lang = getFile('es-MX');
 
                 // required a new digest cycle to override the lang variable passed from the service
                 $rootScope.$digest();
@@ -99,22 +88,7 @@ describe('Localization service', function () {
     describe('German string localization', function () {
         beforeEach(function () {
             inject(function ($rootScope, _$httpBackend_, Localize) {
-                lang = 'de-DE';
-
-                switch (true) {
-                    case /es/.test(lang):
-                        file = 'localization/labels.es-MX.json';
-                        break;
-                    case /de/.test(lang):
-                        file = 'localization/labels.de-DE.json';
-                        break;
-                    case /fr/.test(lang):
-                        file = 'localization/labels.fr-FR.json';
-                        break;
-                    default:
-                        file = 'localization/labels.en-US.json';
-                        break;
-                }
+                var lang = getFile('de-DE');
 
                 // required a new digest cycle to override the lang variable passed from the service
                 $rootScope.$digest();
@@ -147,22 +121,7 @@ describe('Localization service', function () {
     describe('French string localization', function () {
         beforeEach(function () {
             inject(function ($rootScope, _$httpBackend_, Localize) {
-                lang = 'fr-FR';
-
-                switch (true) {
-                    case /es/.test(lang):
-                        file = 'localization/labels.es-MX.json';
-                        break;
-                    case /de/.test(lang):
-                        file = 'localization/labels.de-DE.json';
-                        break;
-                    case /fr/.test(lang):
-                        file = 'localization/labels.fr-FR.json';
-                        break;
-                    default:
-                        file = 'localization/labels.en-US.json';
-                        break;
-                }
+                var lang = getFile('fr-FR');
 
                 // required a new digest cycle to override the lang variable passed from the service
                 $rootScope.$digest();
@@ -195,22 +154,7 @@ describe('Localization service', function () {
     describe('Non supported language string localization', function () {
         beforeEach(function () {
             inject(function ($rootScope, _$httpBackend_, Localize) {
-                lang = 'cn-CN';
-
-                switch (true) {
-                    case /es/.test(lang):
-                        file = 'localization/labels.es-MX.json';
-                        break;
-                    case /de/.test(lang):
-                        file = 'localization/labels.de-DE.json';
-                        break;
-                    case /fr/.test(lang):
-                        file = 'localization/labels.fr-FR.json';
-                        break;
-                    default:
-                        file = 'localization/labels.en-US.json';
-                        break;
-                }
+                var lang = getFile('cn-CN');
 
                 // required a new digest cycle to override the lang variable passed from the service
                 $rootScope.$digest();
