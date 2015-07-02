@@ -187,7 +187,7 @@ describe('Localization service', function () {
             expect(Object.keys(scope.labels).length).toEqual(2);
         });
 
-        it('should return French string when es-MX is detected', function () {
+        it('should return French string when fr-FR is detected', function () {
             expect(file).toBe('localization/labels.fr-FR.json');
         });
     });
