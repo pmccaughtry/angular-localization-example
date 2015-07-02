@@ -1,33 +1,33 @@
 <!DOCTYPE html>
 <html lang="en" ng-app="localization" ng-controller="appController as appCtrl">
-  <head>
-    <meta charset="UTF-8">
-    <title>AngularJS Localization Example</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="lib/bootstrap/dist/css/bootstrap.min.css">
-    <link rel="stylesheet" href="app/css/app.css"/>
-  </head>
+    <head>
+        <meta charset="UTF-8">
+        <title>AngularJS Localization Example</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="lib/bootstrap/dist/css/bootstrap.min.css">
+        <link rel="stylesheet" href="app/css/app.css"/>
+    </head>
 
-  <body>
-    <div class="container-fluid">
-      <header>
-        <h1>Localization Example</h1>
-      </header>
+    <body>
+        <div class="container-fluid">
+            <header>
+                <h1>Localization Example</h1>
+            </header>
 
-      <main ng-view></main>
+            <main ng-view></main>
 
-      <footer>
-        <small>&copy; Paul McCaughtry <span ng-bind="appCtrl.year">2015 - {{labels.present}}.</span> {{labels.footer}}</small>
-      </footer>
-    </div>
+            <footer>
+                <small>&copy; Paul McCaughtry <span ng-bind="appCtrl.year">2015 - {{labels.present}}.</span> {{labels.footer}}</small>
+            </footer>
+        </div>
 
-    <script src="lib/angular/angular.js"></script>
-    <script src="lib/angular-mocks/angular-mocks.js"></script>
-    <script src="lib/angular-resource/angular-resource.js"></script>
-    <script src="lib/angular-route/angular-route.js"></script>
-    <script src="app/js/app.js"></script>
-    <script src="app/js/controllers/app.js"></script>
-    <script src="app/js/controllers/login.js"></script>
-    <script src="app/js/services/localization.js"></script>
-  </body>
+        <script src="lib/angular/angular.js"></script>
+        <script src="lib/angular-mocks/angular-mocks.js"></script>
+        <script src="lib/angular-resource/angular-resource.js"></script>
+        <script src="lib/angular-route/angular-route.js"></script>
+        <script src="app/js/app.js"></script>
+        <script src="app/js/controllers/app.js"></script>
+        <script src="app/js/controllers/login.js"></script>
+        <script src="app/js/services/localization.js"></script>
+    </body>
 </html>
