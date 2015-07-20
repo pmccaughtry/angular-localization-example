@@ -70,6 +70,8 @@ exports.config = {
   // body, but is necessary if ng-app is on a descendant of <body>
   rootElement: 'html',
 
+  framework: 'jasmine2',
+
   // A callback function called once protractor is ready and available, and
   // before the specs are executed
   // You can specify a file containing code to run by setting onPrepare to
@@ -79,6 +81,9 @@ exports.config = {
     // will be available. For example, you can add a Jasmine reporter with:
     //     jasmine.getEnv().addReporter(new jasmine.JUnitXmlReporter(
     //         'outputdir/', true, true));
+	browser.driver.manage().window().maximize();
+	var SpecReporter = require('jasmine-spec-reporter');
+    jasmine.getEnv().addReporter(new SpecReporter({displayStacktrace: true}));
   },
 
   // ----- Options to be passed to minijasminenode -----
@@ -92,6 +97,9 @@ exports.config = {
     // If true, include stack traces in failures.
     includeStackTrace: true,
     // Default time to wait in ms before a test fails.
-    defaultTimeoutInterval: 30000
+    defaultTimeoutInterval: 30000,
+
+	// disable protractor dot reporter
+	print: function () {}
   }
 };
